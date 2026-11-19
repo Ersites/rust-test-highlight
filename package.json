@@ -1,7 +1,7 @@
 {
 	"name": "rust-test-highlight",
-	"displayName": "Rust Test Highlight",
-	"version": "0.1.5",
+	"displayName": "Rust Test Highlight (fork)",
+	"version": "0.2.0",
 	"private": false,
 	"description": "Highlight your inline Rust tests with a customizable background color so they stand out in your editor.",
 	"categories": [
@@ -9,10 +9,10 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/andrewbrey/rust-test-highlight.git"
+		"url": "https://github.com/Ersites/rust-test-highlight.git"
 	},
 	"license": "MIT",
-	"publisher": "andrewbrey",
+	"publisher": "Ersites",
 	"type": "commonjs",
 	"main": "./dist/extension.js",
 	"scripts": {
@@ -30,6 +30,15 @@
 					"dark": "#1c269255",
 					"light": "#27b49655",
 					"highContrast": "#cfcfcf55"
+				}
+			},
+			{
+				"id": "rustTestHighlight.overviewRulerColor",
+				"description": "Overview ruler (scrollbar) marker color for tests",
+				"defaults": {
+					"dark": "#3d4fe0cc",
+					"light": "#27b496cc",
+					"highContrast": "#cfcfcfcc"
 				}
 			}
 		]

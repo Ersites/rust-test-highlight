@@ -6,6 +6,14 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-19
+
+Fork of [andrewbrey/rust-test-highlight](https://github.com/andrewbrey/rust-test-highlight), published under the `Ersites` publisher ID.
+
+### Added
+
+- Mark highlighted `tests` modules in the scrollbar's overview ruler, with a new themable color `rustTestHighlight.overviewRulerColor`
+
 ## [0.1.5] - 2024-02-27
 
 ### Added
