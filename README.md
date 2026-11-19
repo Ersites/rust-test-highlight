@@ -9,14 +9,8 @@
 
 <p align="center">Highlight your inline Rust tests with a customizable background color so they stand out in your editor.</p>
 
-<p align="center">
-	<a href="https://marketplace.visualstudio.com/items?itemName=andrewbrey.rust-test-highlight">
-		<img src="https://img.shields.io/visual-studio-marketplace/d/andrewbrey.rust-test-highlight?style=for-the-badge&logo=visualstudiocode" alt="Visual Studio Marketplace Downloads">
-	</a>
-	<a href="https://github.com/andrewbrey/rust-test-highlight/blob/main/LICENSE">
-		<img src="https://img.shields.io/github/license/andrewbrey/rust-test-highlight?style=for-the-badge" alt="GitHub License">
-	</a>
-</p>
+> **Fork note** - this is a fork of [andrewbrey/rust-test-highlight](https://github.com/andrewbrey/rust-test-highlight) by Andrew Brey. It adds markers for test modules in the scrollbar's overview ruler. It is not published to the VS Code Marketplace; see [Installation](#installation).
+
 
 ---
 
@@ -92,19 +86,22 @@ fn test_add() {}
 
 ## Installation
 
-**Install using Command Palette**
+Download the `.vsix` file from this repository's [Releases](https://github.com/Ersites/rust-test-highlight/releases) and install it:
 
-1. Go to View -> Command Palette or press Ctrl+Shift+P
-2. Then enter "Install Extension
-3. Enter "Rust Test Highlight"
-4. Select it or press Enter to install
+```sh
+code --install-extension rust-test-highlight-0.2.0.vsix
+```
+
+Or build it yourself with `npm ci && npx vsce package`. If you have the original `andrewbrey.rust-test-highlight` installed, uninstall it first so the two don't both highlight.
 
 ## Customizing Highlight Color
 
 ```jsonc
 // user `settings.json` (or in the workspace .vscode/settings.json)
 "workbench.colorCustomizations": {
-  "rustTestHighlight.backgroundColor": "#2813491c"
+  "rustTestHighlight.backgroundColor": "#2813491c",
+  // marker in the scrollbar's overview ruler
+  "rustTestHighlight.overviewRulerColor": "#3d4fe0cc"
 }
 ```
 
